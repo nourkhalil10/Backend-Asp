@@ -1,5 +1,6 @@
+---
 # Image of workspace. Learn more: https://www.gitpod.io/docs/configure/workspaces/workspace-image
-image: gitpod/workspace-full:latest
+image: gitpod/workspace-dotnet
 
 # List the start up tasks. Learn more: https://www.gitpod.io/docs/configure/workspaces/tasks
 tasks:
@@ -14,4 +15,7 @@ ports:
     port: 3000
     onOpen: open-preview
 
-# Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
+vscode:
+    extensions:
+        - muhammad-sammy.csharp
+        - ms-dotnettools.vscode-dotnet-runtime
